@@ -41,7 +41,7 @@ All experiments were ran on a SLURM cluster using the following command from the
 where:
 - `game` is the name of the Atari game (e.g., Freeway, Frostbite, ...)
 - `method` is one of the following implemented exploration methods: `e-greedy`, `ez-greedy`, `boltzmann`, `noisy`, `vpd`, `simhash`, `vpd_sim_hash`
-- `iteration` refers to the numbered seed run (e.g., 0, 1, 2, ...)
+- `iteration_number` refers to the numbered seed run (e.g., 0, 1, 2, ...)
 
 Additionaly, the `job_atari_exploration.sh` script provides a quick way to get a summary of the current training progress for each of the Atari games.
 
