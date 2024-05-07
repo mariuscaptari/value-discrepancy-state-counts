@@ -2,7 +2,7 @@
 
 Value Discrepancy and State Counts, or VDSC for short, is an exploration strategy that leverage the DRL agent's internal state to decide _when_ to explore, addressing the shortcomings of blind switching mechanisms.
 
-The code provided here is an extension of the Dopamine framework, stripped of unnecessary components. [Dopamine](https://arxiv.org/abs/1812.06110) is a research framework for fast prototyping of reinforcement learning.
+The code provided here is an extension of the Dopamine framework, stripped of unnecessary components. [Dopamine](https://arxiv.org/abs/1812.06110) is a research framework for fast prototyping of reinforcement learning algorithms.
 
 The Rainbow ([Hessel et al., 2018][rainbow]) agent (JAX implementation) was used across all experiments.
 
@@ -14,7 +14,7 @@ Install the necessary Atari environments before installing the rest of the packa
 
 1. Install the atari roms following the instructions from
 [atari-py](https://github.com/openai/atari-py#roms).
-2. `pip install ale-py` (we recommend using a virtual environment):
+2. `pip install ale-py`
 3. `unzip $ROM_DIR/ROMS.zip -d $ROM_DIR && ale-import-roms $ROM_DIR/ROMS`
 (replace $ROM_DIR with the directory you extracted the ROMs to).
 
@@ -43,11 +43,11 @@ where:
 - `method` is one of the following implemented exploration methods: `e-greedy`, `ez-greedy`, `boltzmann`, `noisy`, `vpd`, `simhash`, `vpd_sim_hash`
 - `iteration` refers to the numbered seed run (e.g., 0, 1, 2, ...)
 
-Additionaly, the `job_atari_exploration.sh` script provides a quick qay to get a summary of the current training progress for each of the Atari games.
+Additionaly, the `job_atari_exploration.sh` script provides a quick way to get a summary of the current training progress for each of the Atari games.
 
 ## Plot the results
 
-Two sepparate notebooks can be found in the `dopamine/colab` directory containing code to generate plots for vizualizing learning performance, as well as exploratory behaviour.
+Two sepparate notebooks can be found in the `dopamine/colab` directory containing code to generate plots for vizualizing learning curves, as well as exploratory behaviour.
 
 ## References
 
